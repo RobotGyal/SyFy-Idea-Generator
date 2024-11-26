@@ -131,4 +131,7 @@ end_time = datetime.now()
 duration = end_time - start_time
 
 print(f"Script runtime: {duration}")
-print(book_list)
+print(df)
+
+# saving the dataframe
+df.to_csv('test_file.csv')
